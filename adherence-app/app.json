@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "adherence-app",
+    "slug": "adherence-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/splash-screen-icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["audio", "fetch"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/splash-screen-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+   
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/splash-screen-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-screen-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
